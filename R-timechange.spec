@@ -4,7 +4,7 @@
 #
 Name     : R-timechange
 Version  : 0.2.0
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/timechange_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/timechange_0.2.0.tar.gz
 Summary  : Efficient Manipulation of Date-Times
@@ -14,9 +14,6 @@ Requires: R-timechange-lib = %{version}-%{release}
 Requires: R-cpp11
 BuildRequires : R-cpp11
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 accounting for time-zones and daylight saving times. The package includes
@@ -42,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1673545959
+export SOURCE_DATE_EPOCH=1678828258
 
 %install
-export SOURCE_DATE_EPOCH=1673545959
+export SOURCE_DATE_EPOCH=1678828258
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
