@@ -4,7 +4,7 @@
 #
 Name     : R-timechange
 Version  : 0.2.0
-Release  : 4
+Release  : 5
 URL      : https://cran.r-project.org/src/contrib/timechange_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/timechange_0.2.0.tar.gz
 Summary  : Efficient Manipulation of Date-Times
